@@ -1,0 +1,99 @@
+.App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    padding: 1rem;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 0 5px -4px rgba(0, 0, 0, .5);
+    margin-top: 4rem;
+}
+
+.dropDownBox {
+    border: 2px solid rgb(97, 0, 215);
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    min-height: 2.5rem;
+}
+
+.colorList {
+    /* background-color: gray; */
+    flex: 1;
+}
+
+.selectedColors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .6rem;
+}
+
+.selectedColor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    height: 1.8rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.selectedColor > p {
+    font-weight: 500;
+    margin-right: 5px;
+    font-size: .9rem
+}
+
+.closeIcon {
+    margin-top: 1.5px;
+    font-weight: 800;
+}
+
+.right-action-btns {
+    display: flex;
+    align-items: center;
+}
+
+.dropDown {
+    box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-top: 5px;
+}
+
+.singleColor {
+    padding: .6rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.icons {
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.separator {
+    width: 1px;
+    height: 60%;
+    background-color: silver;
+    margin: 0 8px;
+}
+
+.closeIcon:hover {
+    cursor: pointer;
+}
