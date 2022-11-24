@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef, useCallback } from 'react';
+import { useState } from 'react';
 import './App.css';
 import { BsChevronDown, BsChevronUp } from 'react-icons/bs';
 import { MdClose } from 'react-icons/md';
@@ -73,7 +73,6 @@ function App() {
   const [active, setActive] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
 
-
   const handleMouseEnter = (id) => {
     setIsHover(true);
     setActive(id)
@@ -118,7 +117,11 @@ function App() {
             </div>
           </div>
           <div className="right-action-btns">
-            <MdClose className='icons' onClick={() => setSelectedColors([])}/>
+            <MdClose className='icons' onClick={() => {
+              setSelectedColors([])
+              setColors(initialColors)
+              }}
+            />
             <div className='separator'></div>
             <>
               {showDropdown ? 
@@ -131,7 +134,7 @@ function App() {
         </div>
         {showDropdown && 
           <div className="dropDown">
-            {colors.map((color, index) => {
+            {colors?.map((color, index) => {
               return (
                 <div 
                   key={index} 
